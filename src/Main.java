@@ -44,6 +44,10 @@ public class Main {
                 System.out.println("Для ключа " + key + " будет обновлено значение на " + value);
                 map.put(key, value);
             }
+
+            if (!map.containsKey(key)){
+                map.put(key, value);
+            }
         }
         //Смотрим какой список получился
         viewMap();
